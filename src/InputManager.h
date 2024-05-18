@@ -5,7 +5,7 @@
 #ifndef INPUTMANAGER_H
 #define INPUTMANAGER_H
 
-#include "arith/Vec2.h"
+#include "arith/Vec2Int.h"
 #include "SDL2/SDL.h"
 
 class InputManager {
@@ -23,16 +23,16 @@ private:
     bool _quit_requested;
     unsigned _update_counter;
 
-    Vec2 _mouse;
+    Vec2Int _mouse;
 
 public:
-    static InputManager &GetInstance();
+    static InputManager &Instance();
 
     InputManager(InputManager& im) = delete;
     InputManager& operator=(const InputManager&) = delete;
 
     [[nodiscard]] bool quit_requested() const;
-    Vec2 get_mouse();
+    Vec2Int get_mouse();
 
     [[nodiscard]] bool key_press(int key) const;
     [[nodiscard]] bool key_release(int key) const ;

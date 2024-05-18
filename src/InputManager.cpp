@@ -6,7 +6,7 @@
 
 InputManager *InputManager::_instance = nullptr;
 
-InputManager &InputManager::GetInstance() {
+InputManager &InputManager::Instance() {
     if (!_instance) _instance = new InputManager();
     return *_instance;
 }
@@ -30,7 +30,7 @@ bool InputManager::quit_requested() const  {
     return _quit_requested;
 }
 
-Vec2 InputManager::get_mouse() {
+Vec2Int InputManager::get_mouse() {
     return _mouse;
 }
 
@@ -74,5 +74,23 @@ bool InputManager::is_mouse_down(const int button) const {
 void InputManager::update() {
     SDL_Event event;
 
+    SDL_GetMouseState(&_mouse.x,&_mouse.y);
 
+    _update_counter++;
+
+    while(SDL_PollEvent(&event)) {
+        if(event.type == SDL_QUIT) _quit_requested = true;
+
+        if(event.type == SDL_MOUSEBUTTONDOWN || event.type == SDL_MOUSEBUTTONUP) {
+            _mouse_state[event.button.button] = event.type == SDL_MOUSEBUTTONDOWN;
+            _mouse_update[event.button.button] = _update_counter;
+        }
+
+        if((event.type == SDL_KEYDOWN || event.type == SDL_KEYUP) && event.key.repeat == 0) {
+            int idx = event.key.keysym.sym;
+            if(idx > 0x40000000) idx -= 0x3FFFFF81;
+            _key_state[idx] = event.type == SDL_KEYDOWN;
+            _key_update[idx] = _update_counter;
+        }
+    }
 }

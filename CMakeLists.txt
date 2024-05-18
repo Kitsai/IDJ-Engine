@@ -16,4 +16,16 @@ add_library(idj_engine STATIC library.cpp
         src/InputManager.cpp
         src/InputManager.h
         src/arith/Rect.cpp
-        src/arith/Rect.h)
+        src/arith/Rect.h
+        src/arith/Vec2Int.cpp
+        src/arith/Vec2Int.h
+        src/arith/Vec3Int.cpp
+        src/arith/Vec3Int.h
+        src/Game.cpp
+        src/Game.h
+        src/State.cpp
+        src/State.h
+        src/GameObject.cpp
+        src/GameObject.h
+        src/components/Component.cpp
+        src/components/Component.h)

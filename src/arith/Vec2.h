@@ -4,7 +4,10 @@
 
 #ifndef VEC2_H
 #define VEC2_H
+
 #include "Vec3.h"
+#include "Vec3Int.h"
+#include "Vec2Int.h"
 
 class Vec2 {
 public:
@@ -43,6 +46,8 @@ public:
     Vec2 operator*(const float &v) const;
 
     explicit operator Vec3() const;
+    explicit operator Vec3Int() const;
+    explicit operator Vec2Int() const;
 
     [[nodiscard]] float magSq() const;
 

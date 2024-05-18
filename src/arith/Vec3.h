@@ -44,6 +44,8 @@ public:
     Vec3 operator*(const float &v) const;
 
     explicit operator Vec2() const;
+    explicit operator Vec2Int() const;
+    explicit operator Vec3Int() const;
 
     [[nodiscard]] float magSq() const;
 
