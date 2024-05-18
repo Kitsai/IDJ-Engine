@@ -1,0 +1,3 @@
+/home/kitsai/coding/games/idj_engine/cmake-build-debug/CMakeFiles/idj_engine.dir
+/home/kitsai/coding/games/idj_engine/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/kitsai/coding/games/idj_engine/cmake-build-debug/CMakeFiles/rebuild_cache.dir
