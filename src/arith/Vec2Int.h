@@ -5,7 +5,9 @@
 #ifndef IDJ_ENGINE_Vec2INT_H
 #define IDJ_ENGINE_Vec2INT_H
 
-#include "Vec2.h"
+class Vec3Int; // Forward declaration of Vec3Int
+class Vec2; // Forward declaration of Vec2
+class Vec3; // Forward declaration of Vec3
 
 class Vec2Int {
 public:

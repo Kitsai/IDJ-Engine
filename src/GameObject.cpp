@@ -21,52 +21,53 @@ void GameObject::start() {
     _started = true;
 }
 
-void GameObject::update(float dt) {
-    for (int i = 0; i < _component_array.size(); i++) {
-        _component_array[i]->update(dt);
+void GameObject::update() {
+    for (const auto & i : _component_array) {
+        i->update();
     }
 }
 
 void GameObject::fixed_update() {
-    for (int i = 0; i < _component_array.size(); i++) {
-        _component_array[i]->fixed_update();
+    for (const auto & i : _component_array) {
+        i->fixed_update();
     }
 }
 
 void GameObject::render() {
-    for (std::vector<int>::size_type i = 0; i < _component_array.size(); i++){
-        _component_array[i]->render();
+    for (const auto & i : _component_array){
+        i->render();
     }
 }
 
-bool GameObject::is_dead() {return _is_dead;}
+bool GameObject::is_dead() const {return _is_dead;}
 
 void GameObject::request_delete() {_is_dead = true;}
 
-Component &GameObject::add_component(Component *cpt) {
+std::weak_ptr<Component> GameObject::add_component(Component *cpt) {
     _component_array.emplace_back(cpt);
-    Component &item = *_component_array.back();
-    if(_started) item.start();
+    std::shared_ptr<Component> item = _component_array.back();
+    if(_started) item->start();
     return item;
 }
 
-void GameObject::remove_component(Component &cpt) {
+void GameObject::remove_component(Component *cpt) {
     for (int i = 0; i < _component_array.size(); i++) {
-        if(_component_array[i].get() == &cpt) {
+        if(_component_array[i].get() == cpt) {
             _component_array.erase(_component_array.begin() + i);
             return;
         }
     }
 }
 
-Component &GameObject::get_component(std::string type) {
-    for (int i = 0; i < _component_array.size(); i++) {
-        if(_component_array[i]->is(type)) {
-            return *_component_array[i];
+std::weak_ptr<Component> GameObject::get_component(const std::string& type) {
+    for (const auto & i : _component_array) {
+        if(i->is(type)) {
+            return i;
         }
     }
+    return {};
 }
 
 void GameObject::notify_collision(GameObject &other) {
-    for (int i = 0; i < _component_array.size(); i++) _component_array[i]->notify_collision();
+    for (const auto & i : _component_array) i->notify_collision(other);
 }

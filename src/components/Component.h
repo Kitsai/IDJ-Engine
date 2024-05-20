@@ -14,17 +14,17 @@ class Component {
 protected:
     GameObject &_associated;
 public:
-    Component(GameObject &assoc);
+    explicit Component(GameObject &assoc);
     virtual ~Component();
 
-    void virtual update(float dt);
-    void virtual fixed_update();
-    void virtual render();
-    bool virtual is(std::string type) = 0;
+    virtual void update();
+    virtual void fixed_update();
+    virtual void render();
+    virtual bool is(std::string type) = 0;
 
-    void virtual start();
+    virtual void start();
 
-    void virtual notify_collision(GameObject &other);
+    virtual void notify_collision(GameObject &other);
 };
 
 

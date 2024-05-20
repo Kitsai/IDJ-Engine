@@ -7,7 +7,7 @@
 Component::Component(GameObject &assoc): _associated(assoc) {}
 Component::~Component() = default;
 
-void Component::update(float dt) {}
+void Component::update() {}
 
 void Component::fixed_update() {}
 

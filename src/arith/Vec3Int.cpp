@@ -3,6 +3,9 @@
 //
 
 #include "Vec3Int.h"
+#include "Vec3.h"
+#include "Vec2Int.h"
+#include "Vec2.h"
 #include <cmath>
 
 Vec3Int::Vec3Int(int x, int y, int z) {
@@ -149,4 +152,3 @@ Vec3Int Vec3Int::forward() {
 Vec3Int Vec3Int::back() {
     return {0, 0, -1};
 }
-

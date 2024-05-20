@@ -3,6 +3,9 @@
 //
 
 #include "Vec2Int.h"
+#include "Vec2.h"
+#include "Vec3Int.h"
+#include "Vec3.h"
 #include <cmath>
 
 Vec2Int::Vec2Int(const int x,const int y) {

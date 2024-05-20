@@ -21,11 +21,28 @@ add_library(idj_engine STATIC library.cpp
         src/arith/Vec2Int.h
         src/arith/Vec3Int.cpp
         src/arith/Vec3Int.h
-        src/Game.cpp
-        src/Game.h
         src/State.cpp
         src/State.h
         src/GameObject.cpp
         src/GameObject.h
         src/components/Component.cpp
-        src/components/Component.h)
+        src/components/Component.h
+        src/exceptions/ComponentNotFoundException.cpp
+        src/exceptions/ComponentNotFoundException.h
+        src/components/Collision.cpp
+        src/components/Collider.cpp
+        src/components/Collider.h
+        src/Defines.cpp
+        src/components/Camera.cpp
+        src/components/Camera.h
+        src/Game.cpp
+        src/Game.h
+        src/Time/Time.cpp
+        src/Time/Time.h
+        src/settings/Settings.cpp
+        src/settings/Settings.h
+        src/exceptions/GameNotStartedException.cpp
+        src/exceptions/GameNotStartedException.h
+        src/Resources.cpp
+        src/Resources.h
+)

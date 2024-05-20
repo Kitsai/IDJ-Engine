@@ -3,6 +3,8 @@
 //
 
 #include "Rect.h"
+#include "Vec2.h"
+#include "Vec3.h"
 
 Rect::Rect(float x, float y, float z, float w, float h) {
     this->x = x;
@@ -82,4 +84,26 @@ float Rect::dist_rect(const Rect &other) const {
     const Vec3 center = this->get_center();
     const Vec3 other_center = other.get_center();
     return center.distVec3(other_center);
+}
+
+bool Rect::contains(const Vec3 &v) const {
+    bool ret = false;
+
+    if(z == v.z) {
+        const bool lim_left = v.x >= this->x;
+        const bool lim_right = v.x <= this->x + this->w;
+        const bool lim_up = v.y <= this->y;
+        const bool lim_down = v.y >= this->y + this->h;
+        ret = (lim_left && lim_right) && (lim_up && lim_down);
+    }
+
+    return ret;
+}
+
+bool Rect::contains(const Vec2 &v) const {
+    const bool lim_left = v.x >= this->x;
+    const bool lim_right = v.x <= this->x + this->w;
+    const bool lim_up = v.y <= this->y;
+    const bool lim_down = v.y >= this->y + this->h;
+    return (lim_left && lim_right) && (lim_up && lim_down);
 }
