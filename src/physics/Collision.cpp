@@ -83,8 +83,9 @@ public:
             float minB = *std::min_element(P,P + 4);
             float maxB = *std::max_element(P, P + 4);
 
-            Vec2 a1 = Vec2(a.x + a.radius,a.y).rotate(axis.incl());
-            Vec2 a2 = {-a1.x,-a1.y};
+            Vec2 v = (Vec2::right()*a.radius).rotate(axis.incl());
+            Vec2 a1 = Vec2(a)+v;
+            Vec2 a2 = Vec2(a)-v;
             float p1 = Dot(a1,axis);
             float p2 = Dot(a2,axis);
 
