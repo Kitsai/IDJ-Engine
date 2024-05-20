@@ -2,7 +2,7 @@
 // Created by luck3 on 5/18/2024.
 //
 
-#include "ComponentNotFoundException.h"
+#include "exceptions/ComponentNotFoundException.h"
 
 ComponentNotFoundException::ComponentNotFoundException(const std::string& type):
 message(std::string("Component ") + type + std::string (" not found in game object"))

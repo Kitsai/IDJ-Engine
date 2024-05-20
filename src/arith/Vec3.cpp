@@ -2,10 +2,10 @@
 // Created by kitsai on 17/05/24.
 //
 
-#include "Vec3.h"
-#include "Vec3Int.h"
-#include "Vec2.h"
-#include "Vec2Int.h"
+#include "arith/Vec3.h"
+#include "arith/Vec3Int.h"
+#include "arith/Vec2.h"
+#include "arith/Vec2Int.h"
 #include <cmath>
 
 Vec3::Vec3(float x, float y, float z) {
@@ -118,9 +118,9 @@ float Vec3::mag() const {
 }
 Vec3 Vec3::normalize() const {
     const float m = this->mag();
-    return {this->x / m, this->y / m, this->z / m};
+    return {this->x * (1.f/m), this->y * (1.f/m), this->z * (1.f/m)};
 }
-float Vec3::distVec3(const Vec3 &other) const {
+float Vec3::dist_vec3(const Vec3 &other) const {
     return std::sqrt(
             (this->x - other.x) * (this->x - other.x) + (this->y - other.y) * (this->y - other.y) + (this->z - other.z)
                                                                                                     * (this->z - other.z));
@@ -128,7 +128,7 @@ float Vec3::distVec3(const Vec3 &other) const {
 float Vec3::incl() const {
     return std::atan2(this->y, this->x);
 }
-float Vec3::inclVec3(const Vec3 &other) const {
+float Vec3::incl_vec3(const Vec3 &other) const {
     return std::atan2(other.y - this->y, other.x - this->x);
 }
 Vec3 Vec3::rotate(const float angle) const{

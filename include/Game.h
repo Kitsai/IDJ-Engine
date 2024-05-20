@@ -8,7 +8,7 @@
 #include "State.h"
 #include "SDL2/SDL.h"
 #include "settings/Settings.h"
-#include "Time/Time.h"
+#include "time/Time.h"
 #include "InputManager.h"
 #include "Resources.h"
 #include <memory>

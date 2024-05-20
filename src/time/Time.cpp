@@ -2,7 +2,7 @@
 // Created by luck3 on 5/19/2024.
 //
 
-#include "Time.h"
+#include "time/Time.h"
 
 unsigned Time::last_frame = 0;
 unsigned Time::current_frame = SDL_GetPerformanceCounter();

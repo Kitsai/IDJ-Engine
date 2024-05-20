@@ -3,7 +3,7 @@
 //
 
 #include "State.h"
-#include "components/Collider.h"
+#include "components/BoxCollider.h"
 
 bool State::Compare::operator()(const std::shared_ptr<GameObject>& a, const std::shared_ptr<GameObject>& b) const {
     return a->box.z > b->box.z;
@@ -31,10 +31,10 @@ void State::check_collisions() {
     for (auto i = _object_set.begin();
     i != _object_set.end();
     i++) {
-        auto collider_a = std::static_pointer_cast<Collider>((*i)->get_component("Collider").lock());
+        auto collider_a = std::static_pointer_cast<BoxCollider>((*i)->get_component("BoxCollider").lock());
         if(collider_a && collider_a->active) {
             for(auto j = i; j != _object_set.end(); j++) {
-                auto collider_b = std::static_pointer_cast<Collider>((*j)->get_component("Collider").lock());
+                auto collider_b = std::static_pointer_cast<BoxCollider>((*j)->get_component("BoxCollider").lock());
                 if(collider_b
                 && collider_a != collider_b
                 && collider_b -> active

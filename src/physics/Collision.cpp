@@ -5,6 +5,7 @@
 #define Collision_h_
 
 #include "arith/Rect.h"
+#include "arith/Circle.h"
 
 #include <algorithm>
 #include <cmath>
@@ -54,6 +55,45 @@ public:
                 return false;
         }
 
+        return true;
+    }
+
+    static inline bool IsColliding(Circle &a,Circle &b) {
+        const float dist = a.dist_circle_plane(b);
+        return dist < a.radius + b.radius;
+    }
+
+    static inline bool IsColliding(Circle &a, Rect &b, float angle_b) {
+        Vec2 B[] = {
+                {b.x,b.y+b.h},
+                {b.x + b.w, b.y+b.h},
+                {b.x + b.w, b.y},
+                {b.x,b.y}
+        };
+
+        for(auto& v: B) {
+            v = Rotate(v - (Vec2)b.get_center(), angle_b) + (Vec2)b.get_center();
+        }
+
+        Vec2 axes[] = {Norm(B[0] - B[1]), Norm(B[1] - B[2])};
+        for(auto& axis: axes) {
+            float P[4];
+            for(int i = 0; i < 4; ++i) P[i] = Dot(B[i], axis);
+
+            float minB = *std::min_element(P,P + 4);
+            float maxB = *std::max_element(P, P + 4);
+
+            Vec2 a1 = Vec2(a.x + a.radius,a.y).rotate(axis.incl());
+            Vec2 a2 = {-a1.x,-a1.y};
+            float p1 = Dot(a1,axis);
+            float p2 = Dot(a2,axis);
+
+            float minA = std::min(p1,p2);
+            float maxA = std::max(p1,p2);
+
+            if(maxA < minB || minA > maxB)
+                return false;
+        }
         return true;
     }
 

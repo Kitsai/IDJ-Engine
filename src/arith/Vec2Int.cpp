@@ -2,10 +2,10 @@
 // Created by luck3 on 5/17/2024.
 //
 
-#include "Vec2Int.h"
-#include "Vec2.h"
-#include "Vec3Int.h"
-#include "Vec3.h"
+#include "arith/Vec2Int.h"
+#include "arith/Vec2.h"
+#include "arith/Vec3Int.h"
+#include "arith/Vec3.h"
 #include <cmath>
 
 Vec2Int::Vec2Int(const int x,const int y) {
@@ -74,7 +74,7 @@ Vec2Int Vec2Int::operator*(const int& v) const {
 }
 
 Vec2Int::operator Vec3Int() const {
-    return {static_cast<float>(this->x),static_cast<float>(this->y),0};
+    return {this->x,this->y,0};
 }
 
 Vec2Int::operator Vec3() const {
@@ -95,7 +95,7 @@ float Vec2Int::mag() const {
 
 Vec2Int Vec2Int::normalize() const {
     const float m = this->mag();
-    return {static_cast<int>(this->x / m), static_cast<int>(this->y / m)};
+    return {static_cast<int>(this->x * (1.f/m)), static_cast<int>(this->y * (1.f/m))};
 }
 
 float Vec2Int::distVec2Int(const Vec2Int& other) const{

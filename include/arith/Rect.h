@@ -5,8 +5,8 @@
 #ifndef RECT_H
 #define RECT_H
 
-#include "Vec3.h"
-#include "Vec2.h"
+#include "arith/Vec3.h"
+#include "arith/Vec2.h"
 
 class Rect {
 public:

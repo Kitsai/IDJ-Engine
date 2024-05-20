@@ -2,9 +2,9 @@
 // Created by kitsai on 17/05/24.
 //
 
-#include "Rect.h"
-#include "Vec2.h"
-#include "Vec3.h"
+#include "arith/Rect.h"
+#include "arith/Vec2.h"
+#include "arith/Vec3.h"
 
 Rect::Rect(float x, float y, float z, float w, float h) {
     this->x = x;
@@ -83,7 +83,7 @@ void Rect::set_center(const Vec2 &center) {
 float Rect::dist_rect(const Rect &other) const {
     const Vec3 center = this->get_center();
     const Vec3 other_center = other.get_center();
-    return center.distVec3(other_center);
+    return center.dist_vec3(other_center);
 }
 
 bool Rect::contains(const Vec3 &v) const {

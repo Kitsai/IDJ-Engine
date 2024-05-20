@@ -53,9 +53,9 @@ public:
     [[nodiscard]] float magSq() const;
     [[nodiscard]] float mag() const;
     [[nodiscard]] Vec3 normalize() const;
-    [[nodiscard]] float distVec3(const Vec3 &other) const;
+    [[nodiscard]] float dist_vec3(const Vec3 &other) const;
     [[nodiscard]] float incl() const;
-    [[nodiscard]] float inclVec3(const Vec3 &other) const;
+    [[nodiscard]] float incl_vec3(const Vec3 &other) const;
     [[nodiscard]] Vec3 rotate(float angle) const;
     [[nodiscard]] Vec3 abs() const;
     [[nodiscard]] float dot(const Vec3 &v) const;

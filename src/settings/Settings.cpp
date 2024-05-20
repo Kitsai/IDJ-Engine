@@ -2,7 +2,7 @@
 // Created by luck3 on 5/19/2024.
 //
 
-#include "Settings.h"
+#include "settings/Settings.h"
 
 #include <iostream>
 #include <fstream>

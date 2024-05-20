@@ -2,10 +2,10 @@
 // Created by kitsai on 17/05/24.
 //
 
-#include "Vec3Int.h"
-#include "Vec3.h"
-#include "Vec2Int.h"
-#include "Vec2.h"
+#include "arith/Vec3Int.h"
+#include "arith/Vec3.h"
+#include "arith/Vec2Int.h"
+#include "arith/Vec2.h"
 #include <cmath>
 
 Vec3Int::Vec3Int(int x, int y, int z) {

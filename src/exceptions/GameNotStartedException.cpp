@@ -2,7 +2,7 @@
 // Created by luck3 on 5/19/2024.
 //
 
-#include "GameNotStartedException.h"
+#include "exceptions/GameNotStartedException.h"
 
 GameNotStartedException::GameNotStartedException() = default;
 

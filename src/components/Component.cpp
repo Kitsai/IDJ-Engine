@@ -2,7 +2,7 @@
 // Created by luck3 on 5/18/2024.
 //
 
-#include "Component.h"
+#include "components/Component.h"
 
 Component::Component(GameObject &assoc): _associated(assoc) {}
 Component::~Component() = default;

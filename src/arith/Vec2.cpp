@@ -1,10 +1,10 @@
 //
 // Created by kitsai on 17/05/24.
 //
-#include "Vec2.h"
-#include "Vec3.h"
-#include "Vec2Int.h"
-#include "Vec3Int.h"
+#include "arith/Vec2.h"
+#include "arith/Vec3.h"
+#include "arith/Vec2Int.h"
+#include "arith/Vec3Int.h"
 #include <cmath>
 
 Vec2::Vec2(const float x,const float y) {
@@ -115,10 +115,10 @@ float Vec2::mag() const {
 
 Vec2 Vec2::normalize() const {
     const float m = this->mag();
-    return {this->x / m, this->y / m};
+    return {this->x * (1.f/m), this->y * (1.f/m)};
 }
 
-float Vec2::distVec2(const Vec2& other) const{
+float Vec2::dist_vec2(const Vec2& other) const{
     return (*this - other).mag();
 }
 

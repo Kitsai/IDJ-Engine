@@ -53,7 +53,7 @@ public:
     [[nodiscard]] float magSq() const;
     [[nodiscard]] float mag() const;
     [[nodiscard]] Vec2 normalize() const;
-    [[nodiscard]] float distVec2(const Vec2 &other) const;
+    [[nodiscard]] float dist_vec2(const Vec2 &other) const;
     [[nodiscard]] float incl() const;
     [[nodiscard]] float incl_vec2(const Vec2 &other) const;
     [[nodiscard]] Vec2 rotate(float angle) const;

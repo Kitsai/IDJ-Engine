@@ -9,40 +9,46 @@ include_directories(
 set(CMAKE_CXX_STANDARD 26)
 
 add_library(idj_engine STATIC library.cpp
-        src/arith/Vec2.h
+        include/arith/Vec2.h
         src/arith/Vec2.cpp
         src/arith/Vec3.cpp
-        src/arith/Vec3.h
+        include/arith/Vec3.h
         src/InputManager.cpp
-        src/InputManager.h
+        include/InputManager.h
         src/arith/Rect.cpp
-        src/arith/Rect.h
+        include/arith/Rect.h
         src/arith/Vec2Int.cpp
-        src/arith/Vec2Int.h
+        include/arith/Vec2Int.h
         src/arith/Vec3Int.cpp
-        src/arith/Vec3Int.h
+        include/arith/Vec3Int.h
         src/State.cpp
-        src/State.h
+        include/State.h
         src/GameObject.cpp
-        src/GameObject.h
+        include/GameObject.h
         src/components/Component.cpp
-        src/components/Component.h
+        include/components/Component.h
         src/exceptions/ComponentNotFoundException.cpp
-        src/exceptions/ComponentNotFoundException.h
-        src/components/Collision.cpp
-        src/components/Collider.cpp
-        src/components/Collider.h
+        include/exceptions/ComponentNotFoundException.h
+        src/physics/Collision.cpp
+        src/components/BoxCollider.cpp
+        include/components/BoxCollider.h
         src/Defines.cpp
         src/components/Camera.cpp
-        src/components/Camera.h
+        include/components/Camera.h
         src/Game.cpp
-        src/Game.h
-        src/Time/Time.cpp
-        src/Time/Time.h
+        include/Game.h
+        src/time/Time.cpp
+        include/time/Time.h
         src/settings/Settings.cpp
-        src/settings/Settings.h
+        include/settings/Settings.h
         src/exceptions/GameNotStartedException.cpp
-        src/exceptions/GameNotStartedException.h
+        include/exceptions/GameNotStartedException.h
         src/Resources.cpp
-        src/Resources.h
+        include/Resources.h
+        src/arith/Circle.cpp
+        include/arith/Circle.h
+        src/components/Collider.cpp
+        include/components/Collider.h
+        src/components/CircleCollider.cpp
+        include/components/CircleCollider.h
 )
