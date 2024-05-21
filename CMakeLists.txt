@@ -32,7 +32,7 @@ add_library(idj_engine STATIC library.cpp
         src/physics/Collision.cpp
         src/components/BoxCollider.cpp
         include/components/BoxCollider.h
-        src/Defines.cpp
+        include/Defines.h
         src/components/Camera.cpp
         include/components/Camera.h
         src/Game.cpp
@@ -51,4 +51,5 @@ add_library(idj_engine STATIC library.cpp
         include/components/Collider.h
         src/components/CircleCollider.cpp
         include/components/CircleCollider.h
+        include/physics/precision.h
 )

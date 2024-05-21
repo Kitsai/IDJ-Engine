@@ -8,29 +8,33 @@
 #include "Component.h"
 #include "arith/Vec2.h"
 #include "SDL2/SDL.h"
-#include "Defines.cpp"
+#include "Defines.h"
 #include "physics/Collision.cpp"
 
-class Collider: public Component {
-protected:
-    Vec2 scale;
-    Vec2 offset;
-    SDL_Color color;
-public:
-    explicit Collider(GameObject& associated, Vec2 scale = {1, 1}, Vec2 offset = {0, 0}, SDL_Color color = COLOR_RED);
+namespace fyrebird {
+    class Collider : public Component {
+    protected:
+        Vec2 scale;
+        Vec2 offset;
+        SDL_Color color;
+    public:
+        explicit Collider(GameObject &associated, Vec2 scale = {1, 1}, Vec2 offset = {0, 0},
+                          SDL_Color color = COLOR_RED);
 
-    bool active;
+        bool active;
 
-    bool is(std::string type) override;
+        bool is(std::string type) override;
 
-    void set_scale(Vec2 s);
-    void set_offset(Vec2 offs);
-    void set_color(SDL_Color c);
+        void set_scale(Vec2 s);
 
-    [[nodiscard]] virtual Vec2 get_center() const = 0;
+        void set_offset(Vec2 offs);
 
-    virtual bool is_colliding(GameObject &other) = 0;
-};
+        void set_color(SDL_Color c);
 
+        [[nodiscard]] virtual Vec2 get_center() const = 0;
+
+        virtual bool is_colliding(GameObject &other) = 0;
+    };
+}
 
 #endif //IDJ_ENGINE_COLLIDER_H

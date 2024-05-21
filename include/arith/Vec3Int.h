@@ -5,80 +5,85 @@
 #ifndef IDJ_ENGINE_Vec3INT_H
 #define IDJ_ENGINE_Vec3INT_H
 
-class Vec2Int; // Forward declaration of Vec2Int
-class Vec2; // Forward declaration of Vec2
-class Vec3; // Forward declaration of Vec3
+#include "physics/precision.h"
 
-class Vec3Int {
-public:
-    int x, y, z;
+namespace fyrebird {
+    class Vec2Int; // Forward declaration of Vec2Int
+    class Vec2; // Forward declaration of Vec2
+    class Vec3; // Forward declaration of Vec3
 
-    Vec3Int(int x, int y, int z);
+    class Vec3Int {
+    public:
+        integer x, y, z;
 
-    Vec3Int &operator=(const Vec3Int &v);
+        Vec3Int(integer x, integer y, integer z);
 
-    Vec3Int operator+(const Vec3Int &v) const;
+        Vec3Int &operator=(const Vec3Int &v);
 
-    Vec3Int operator-(const Vec3Int &v) const;
+        Vec3Int operator+(const Vec3Int &v) const;
 
-    Vec3Int operator*(const Vec3Int &v) const;
+        Vec3Int operator-(const Vec3Int &v) const;
 
-    void operator+=(const Vec3Int &v);
+        Vec3Int operator*(const Vec3Int &v) const;
 
-    void operator-=(const Vec3Int &v);
+        void operator+=(const Vec3Int &v);
 
-    bool operator==(const Vec3Int &v) const;
+        void operator-=(const Vec3Int &v);
 
-    bool operator!=(const Vec3Int &v) const;
+        bool operator==(const Vec3Int &v) const;
 
-    bool operator>(const Vec3Int &v) const;
+        bool operator!=(const Vec3Int &v) const;
 
-    bool operator<(const Vec3Int &v) const;
+        bool operator>(const Vec3Int &v) const;
 
-    bool operator>=(const Vec3Int &v) const;
+        bool operator<(const Vec3Int &v) const;
 
-    bool operator<=(const Vec3Int &v) const;
+        bool operator>=(const Vec3Int &v) const;
 
-    Vec3Int operator+(const int &v) const;
+        bool operator<=(const Vec3Int &v) const;
 
-    Vec3Int operator-(const int &v) const;
+        Vec3Int operator+(const integer &v) const;
 
-    Vec3Int operator*(const int &v) const;
+        Vec3Int operator-(const integer &v) const;
 
-    explicit operator Vec2Int() const;
-    explicit operator Vec2() const;
-    explicit operator Vec3() const;
+        Vec3Int operator*(const integer &v) const;
 
-    [[nodiscard]] int magSq() const;
+        explicit operator Vec2Int() const;
 
-    [[nodiscard]] float mag() const;
+        explicit operator Vec2() const;
 
-    [[nodiscard]] Vec3Int normalize() const;
+        explicit operator Vec3() const;
 
-    [[nodiscard]] float distVec3Int(const Vec3Int &other) const;
+        [[nodiscard]] integer magSq() const;
 
-    [[nodiscard]] float incl() const;
+        [[nodiscard]] float mag() const;
 
-    [[nodiscard]] float inclVec3Int(const Vec3Int &other) const;
+        [[nodiscard]] Vec3Int normalize() const;
 
-    [[nodiscard]] Vec3Int rotate(float angle) const;
+        [[nodiscard]] float distVec3Int(const Vec3Int &other) const;
 
-    [[nodiscard]] Vec3Int abs() const;
+        [[nodiscard]] float incl() const;
 
-    static Vec3Int zero();
+        [[nodiscard]] float inclVec3Int(const Vec3Int &other) const;
 
-    static Vec3Int left();
+        [[nodiscard]] Vec3Int rotate(float angle) const;
 
-    static Vec3Int right();
+        [[nodiscard]] Vec3Int abs() const;
 
-    static Vec3Int up();
+        static Vec3Int zero();
 
-    static Vec3Int down();
+        static Vec3Int left();
 
-    static Vec3Int forward();
+        static Vec3Int right();
 
-    static Vec3Int back();
-};
+        static Vec3Int up();
 
+        static Vec3Int down();
+
+        static Vec3Int forward();
+
+        static Vec3Int back();
+    };
+}
 
 #endif //IDJ_ENGINE_Vec3INT_H

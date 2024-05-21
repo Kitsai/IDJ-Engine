@@ -4,15 +4,18 @@
 
 #include "components/Component.h"
 
-Component::Component(GameObject &assoc): _associated(assoc) {}
-Component::~Component() = default;
+namespace fyrebird {
+    Component::Component(GameObject &assoc) : _associated(assoc) {}
 
-void Component::update() {}
+    Component::~Component() = default;
 
-void Component::fixed_update() {}
+    void Component::update() {}
 
-void Component::render() {}
+    void Component::fixed_update() {}
 
-void Component::start() {}
+    void Component::render() {}
 
-void Component::notify_collision(GameObject &other) {}
+    void Component::start() {}
+
+    void Component::notify_collision(GameObject &other) {}
+}

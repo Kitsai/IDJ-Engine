@@ -3,3 +3,6 @@
 //
 
 #include "components/CircleCollider.h"
+namespace fyrebird {
+
+}

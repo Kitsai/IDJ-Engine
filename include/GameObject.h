@@ -10,33 +10,42 @@
 #include "arith/Rect.h"
 #include <vector>
 
-class GameObject {
-private:
-    std::vector<std::shared_ptr<Component>> _component_array;
-    bool _is_dead;
-    bool _started;
-public:
-    Rect box;
-    float angle_deg;
+namespace fyrebird {
+    class GameObject {
+    private:
+        std::vector<std::shared_ptr<Component>> _component_array;
+        bool _is_dead;
+        bool _started;
+    public:
+        Rect box;
+        float angle_deg;
 
-    GameObject();
-    ~GameObject();
+        GameObject();
 
-    void start();
-    void update();
-    void fixed_update();
-    void render();
+        ~GameObject();
 
-    [[nodiscard]] bool is_dead() const;
-    void request_delete();
+        void start();
 
-    std::weak_ptr<Component> add_component(Component* cpt);
-    void remove_component(Component *cpt);
-    std::weak_ptr<Component> get_component(const std::string& type);
-    std::weak_ptr<Component> get
+        void update();
 
-    void notify_collision(GameObject& other);
-};
+        void fixed_update();
 
+        void render();
+
+        [[nodiscard]] bool is_dead() const;
+
+        void request_delete();
+
+        std::weak_ptr<Component> add_component(Component *cpt);
+
+        void remove_component(Component *cpt);
+
+        std::weak_ptr<Component> get_component(const std::string &type);
+
+//        std::weak_ptr<Component> get_component()
+
+        void notify_collision(GameObject &other);
+    };
+}
 
 #endif //IDJ_ENGINE_GAMEOBJECT_H

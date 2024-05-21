@@ -7,18 +7,23 @@
 
 #include "GameObject.h"
 
-class Camera: public Component {
-protected:
-    std::weak_ptr<GameObject> _focus;
-public:
-     static std::shared_ptr<Camera> current_camera;
+namespace fyrebird {
+    class Camera : public Component {
+    protected:
+        std::weak_ptr<GameObject> _focus;
+    public:
+        static std::shared_ptr<Camera> current_camera;
 
-     void follow(std::weak_ptr<GameObject> focus);
-     void unfollow();
-     void update() override;
-     Vec2 pos();
+        void follow(std::weak_ptr<GameObject> focus);
 
-     explicit Camera(GameObject &assoc, bool set_as_current = false);
-};
+        void unfollow();
+
+        void update() override;
+
+        Vec2 pos();
+
+        explicit Camera(GameObject &assoc, bool set_as_current = false);
+    };
+}
 
 #endif //IDJ_ENGINE_CAMERA_H

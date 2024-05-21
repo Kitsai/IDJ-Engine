@@ -8,41 +8,49 @@
 #include "arith/Vec2Int.h"
 #include "SDL2/SDL.h"
 
-class InputManager {
-private:
-    static InputManager *_instance;
+namespace fyrebird {
+    class InputManager {
+    private:
+        static InputManager *_instance;
 
-    InputManager();
+        InputManager();
 
-    bool _mouse_state[6]{};
-    unsigned _mouse_update[6]{};
+        bool _mouse_state[6]{};
+        natural _mouse_update[6]{};
 
-    bool _key_state[416]{};
-    unsigned _key_update[416]{};
+        bool _key_state[416]{};
+        natural _key_update[416]{};
 
-    bool _quit_requested;
-    unsigned _update_counter;
+        bool _quit_requested;
+        natural _update_counter;
 
-    Vec2Int _mouse;
+        Vec2Int _mouse;
 
-public:
-    static InputManager &Instance();
+    public:
+        static InputManager &Instance();
 
-    InputManager(InputManager& im) = delete;
-    InputManager& operator=(const InputManager&) = delete;
+        InputManager(InputManager &im) = delete;
 
-    [[nodiscard]] bool quit_requested() const;
-    Vec2Int get_mouse();
+        InputManager &operator=(const InputManager &) = delete;
 
-    [[nodiscard]] bool key_press(int key) const;
-    [[nodiscard]] bool key_release(int key) const ;
-    [[nodiscard]] bool is_key_down(int key) const;
+        [[nodiscard]] bool quit_requested() const;
 
-    [[nodiscard]] bool mouse_press(int button) const;
-    [[nodiscard]] bool mouse_release(int button) const;
-    [[nodiscard]] bool is_mouse_down(int button) const;
+        Vec2Int get_mouse();
 
-    void update();
-};
+        [[nodiscard]] bool key_press(integer key) const;
+
+        [[nodiscard]] bool key_release(integer key) const;
+
+        [[nodiscard]] bool is_key_down(integer key) const;
+
+        [[nodiscard]] bool mouse_press(integer button) const;
+
+        [[nodiscard]] bool mouse_release(integer button) const;
+
+        [[nodiscard]] bool is_mouse_down(integer button) const;
+
+        void update();
+    };
+}
 
 #endif //INPUTMANAGER_H

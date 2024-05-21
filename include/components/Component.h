@@ -8,24 +8,29 @@
 #include <string>
 #include <memory>
 
-class GameObject;
+namespace fyrebird {
+    class GameObject;
 
-class Component {
-protected:
-    GameObject &_associated;
-public:
-    explicit Component(GameObject &assoc);
-    virtual ~Component();
+    class Component {
+    protected:
+        GameObject &_associated;
+    public:
+        explicit Component(GameObject &assoc);
 
-    virtual void update();
-    virtual void fixed_update();
-    virtual void render();
-    virtual bool is(std::string type) = 0;
+        virtual ~Component();
 
-    virtual void start();
+        virtual void update();
 
-    virtual void notify_collision(GameObject &other);
-};
+        virtual void fixed_update();
 
+        virtual void render();
+
+        virtual bool is(std::string type) = 0;
+
+        virtual void start();
+
+        virtual void notify_collision(GameObject &other);
+    };
+}
 
 #endif //IDJ_ENGINE_COMPONENT_H

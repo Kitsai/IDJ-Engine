@@ -8,13 +8,15 @@
 #include <exception>
 #include <string>
 
-class ComponentNotFoundException: public std::exception {
-private:
-    std::string message;
-public:
-    explicit ComponentNotFoundException(const std::string& type);
-    [[nodiscard]] const char *what() const noexcept override;
-};
+namespace fyrebird {
+    class ComponentNotFoundException : public std::exception {
+    private:
+        std::string message;
+    public:
+        explicit ComponentNotFoundException(const std::string &type);
 
+        [[nodiscard]] const char *what() const noexcept override;
+    };
+}
 
 #endif //IDJ_ENGINE_COMPONENTNOTFOUNDEXCEPTION_H

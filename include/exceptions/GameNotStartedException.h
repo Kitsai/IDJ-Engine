@@ -8,11 +8,13 @@
 #include <exception>
 #include <string>
 
-class GameNotStartedException: public std::exception {
-public:
-    GameNotStartedException();
-    [[nodiscard]] const char *what() const noexcept override;
-};
+namespace fyrebird {
+    class GameNotStartedException : public std::exception {
+    public:
+        GameNotStartedException();
 
+        [[nodiscard]] const char *what() const noexcept override;
+    };
+}
 
 #endif //IDJ_ENGINE_GAMENOTSTARTEDEXCEPTION_H

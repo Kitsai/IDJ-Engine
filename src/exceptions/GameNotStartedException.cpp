@@ -4,8 +4,10 @@
 
 #include "exceptions/GameNotStartedException.h"
 
-GameNotStartedException::GameNotStartedException() = default;
+namespace fyrebird {
+    GameNotStartedException::GameNotStartedException() = default;
 
-const char *GameNotStartedException::what() const noexcept {
-    return "Game not able to be constructed";
+    const char *GameNotStartedException::what() const noexcept {
+        return "Game not able to be constructed";
+    }
 }

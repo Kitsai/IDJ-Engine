@@ -8,10 +8,13 @@
 #include "Collider.h"
 #include "arith/Circle.h"
 
-class CircleCollider: public Collider {
-public:
-    Circle circle;
-};
+namespace fyrebird {
+    class CircleCollider : public Collider {
+    public:
+        Circle circle;
+    };
 
+
+}
 
 #endif //IDJ_ENGINE_CIRCLECOLLIDER_H

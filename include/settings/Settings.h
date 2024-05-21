@@ -7,16 +7,18 @@
 
 #include <string>
 
-constexpr int NUM_SETTINGS_LINES = 4;
+namespace fyrebird {
+    constexpr int NUM_SETTINGS_LINES = 4;
 
-class Settings {
-public:
-    static void load();
-    static std::string title;
-    static int screen_width;
-    static int screen_height;
-    static int frame_delay;
-};
+    class Settings {
+    public:
+        static void load();
 
+        static std::string title;
+        static int screen_width;
+        static int screen_height;
+        static int frame_delay;
+    };
+}
 
 #endif //IDJ_ENGINE_SETTINGS_H
