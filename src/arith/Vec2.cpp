@@ -6,6 +6,7 @@
 #include "arith/Vec2Int.h"
 #include "arith/Vec3Int.h"
 #include <cmath>
+#include "physics/precision.h"
 
 namespace fyrebird {
 
@@ -91,8 +92,8 @@ namespace fyrebird {
         return {x - v.x, y - v.y};
     }
 
-    Vec2 Vec2::operator*(const Vec3 &v) const {
-        return {x * v.x, y * v.y};
+    real Vec2::operator*(const Vec3 &v) const {
+        return x * v.x + y * v.y;
     }
 
     void Vec2::operator+=(const Vec3 &v) {
@@ -105,10 +106,6 @@ namespace fyrebird {
         y -= v.y;
     }
 
-    void Vec2::operator*=(const Vec3 &v) {
-        y *= v.y;
-        x *= v.x;
-    }
 
 //CONVERTORS
     Vec2::operator Vec3() const {
@@ -129,7 +126,8 @@ namespace fyrebird {
     }
 
     real Vec2::mag() const {
-        return std::sqrt(this->magSq());
+        real ret = real_sqrt(this->magSq());
+        return ret;
     }
 
     Vec2 Vec2::normalize() const {
@@ -160,8 +158,7 @@ namespace fyrebird {
     }
 
     real Vec2::dot(const Vec2 &v) const {
-        Vec2 product = *this * v;
-        return product.x + product.y;
+        return (this->x * v.x) + (this->y * v.y);
     }
 
     Vec2 Vec2::cross(const Vec2 &v) const {

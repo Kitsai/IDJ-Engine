@@ -5,8 +5,12 @@
 #ifndef IDJ_ENGINE_PRECISION_H
 #define IDJ_ENGINE_PRECISION_H
 
-typedef float real;
-typedef int integer;
-typedef unsigned natural;
+namespace fyrebird {
+    typedef float real;
+    typedef int integer;
+    typedef unsigned natural;
+
+    #define real_sqrt(x) sqrt(x);
+}
 
 #endif //IDJ_ENGINE_PRECISION_H

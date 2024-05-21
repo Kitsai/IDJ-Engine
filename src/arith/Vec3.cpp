@@ -137,7 +137,7 @@ namespace fyrebird {
     }
 
     real Vec3::mag() const {
-        return std::sqrt(this->magSq());
+        return real_sqrt(this->magSq());
     }
 
     Vec3 Vec3::normalize() const {
@@ -146,7 +146,7 @@ namespace fyrebird {
     }
 
     real Vec3::dist_vec3(const Vec3 &other) const {
-        return std::sqrt(
+        return real_sqrt(
                 (this->x - other.x) * (this->x - other.x) + (this->y - other.y) * (this->y - other.y) +
                 (this->z - other.z)
                 * (this->z - other.z));
