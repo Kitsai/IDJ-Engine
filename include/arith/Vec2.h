@@ -27,6 +27,8 @@ namespace fyrebird {
 
         real operator*(const Vec2 &v) const;
 
+        real operator%(const Vec2 &v) const;
+
         void operator-=(const Vec2 &v);
 
         void operator+=(const Vec2 &v);
@@ -57,6 +59,8 @@ namespace fyrebird {
         void operator-=(const Vec3 &v);
 
         //SCALER
+        Vec2 &operator=(const real &v);
+
         Vec2 operator+(const real &v) const;
 
         Vec2 operator-(const real &v) const;
@@ -87,9 +91,13 @@ namespace fyrebird {
 
         [[nodiscard]] Vec2 abs() const;
 
+        [[nodiscard]] Vec2 inverse() const;
+
+        [[nodiscard]] Vec2 component_product(const Vec2 &v) const;
+
         [[nodiscard]] real dot(const Vec2 &v) const;
 
-        [[nodiscard]] Vec2 cross(const Vec2 &v) const;
+        [[nodiscard]] real cross(const Vec2 &v) const;
 
         //INITIALIZERS
         static Vec2 zero();

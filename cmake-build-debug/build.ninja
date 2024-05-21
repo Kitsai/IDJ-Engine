@@ -55,6 +55,8 @@ build CMakeFiles/idj_engine.dir/library.cpp.o: CXX_COMPILER__idj_engine_unscanne
   INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
   OBJECT_DIR = CMakeFiles/idj_engine.dir
   OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
 
 build CMakeFiles/idj_engine.dir/src/arith/Vec2.cpp.o: CXX_COMPILER__idj_engine_unscanned_Debug /home/kitsai/coding/games/idj_engine/src/arith/Vec2.cpp || cmake_object_order_depends_target_idj_engine
   DEP_FILE = CMakeFiles/idj_engine.dir/src/arith/Vec2.cpp.o.d
@@ -62,6 +64,8 @@ build CMakeFiles/idj_engine.dir/src/arith/Vec2.cpp.o: CXX_COMPILER__idj_engine_u
   INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
   OBJECT_DIR = CMakeFiles/idj_engine.dir
   OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir/src/arith
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
 
 build CMakeFiles/idj_engine.dir/src/arith/Vec3.cpp.o: CXX_COMPILER__idj_engine_unscanned_Debug /home/kitsai/coding/games/idj_engine/src/arith/Vec3.cpp || cmake_object_order_depends_target_idj_engine
   DEP_FILE = CMakeFiles/idj_engine.dir/src/arith/Vec3.cpp.o.d
@@ -69,6 +73,8 @@ build CMakeFiles/idj_engine.dir/src/arith/Vec3.cpp.o: CXX_COMPILER__idj_engine_u
   INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
   OBJECT_DIR = CMakeFiles/idj_engine.dir
   OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir/src/arith
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
 
 build CMakeFiles/idj_engine.dir/src/InputManager.cpp.o: CXX_COMPILER__idj_engine_unscanned_Debug /home/kitsai/coding/games/idj_engine/src/InputManager.cpp || cmake_object_order_depends_target_idj_engine
   DEP_FILE = CMakeFiles/idj_engine.dir/src/InputManager.cpp.o.d
@@ -76,6 +82,8 @@ build CMakeFiles/idj_engine.dir/src/InputManager.cpp.o: CXX_COMPILER__idj_engine
   INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
   OBJECT_DIR = CMakeFiles/idj_engine.dir
   OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
 
 build CMakeFiles/idj_engine.dir/src/arith/Rect.cpp.o: CXX_COMPILER__idj_engine_unscanned_Debug /home/kitsai/coding/games/idj_engine/src/arith/Rect.cpp || cmake_object_order_depends_target_idj_engine
   DEP_FILE = CMakeFiles/idj_engine.dir/src/arith/Rect.cpp.o.d
@@ -83,6 +91,161 @@ build CMakeFiles/idj_engine.dir/src/arith/Rect.cpp.o: CXX_COMPILER__idj_engine_u
   INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
   OBJECT_DIR = CMakeFiles/idj_engine.dir
   OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir/src/arith
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
+
+build CMakeFiles/idj_engine.dir/src/arith/Vec2Int.cpp.o: CXX_COMPILER__idj_engine_unscanned_Debug /home/kitsai/coding/games/idj_engine/src/arith/Vec2Int.cpp || cmake_object_order_depends_target_idj_engine
+  DEP_FILE = CMakeFiles/idj_engine.dir/src/arith/Vec2Int.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
+  OBJECT_DIR = CMakeFiles/idj_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir/src/arith
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
+
+build CMakeFiles/idj_engine.dir/src/arith/Vec3Int.cpp.o: CXX_COMPILER__idj_engine_unscanned_Debug /home/kitsai/coding/games/idj_engine/src/arith/Vec3Int.cpp || cmake_object_order_depends_target_idj_engine
+  DEP_FILE = CMakeFiles/idj_engine.dir/src/arith/Vec3Int.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
+  OBJECT_DIR = CMakeFiles/idj_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir/src/arith
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
+
+build CMakeFiles/idj_engine.dir/src/State.cpp.o: CXX_COMPILER__idj_engine_unscanned_Debug /home/kitsai/coding/games/idj_engine/src/State.cpp || cmake_object_order_depends_target_idj_engine
+  DEP_FILE = CMakeFiles/idj_engine.dir/src/State.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
+  OBJECT_DIR = CMakeFiles/idj_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
+
+build CMakeFiles/idj_engine.dir/src/GameObject.cpp.o: CXX_COMPILER__idj_engine_unscanned_Debug /home/kitsai/coding/games/idj_engine/src/GameObject.cpp || cmake_object_order_depends_target_idj_engine
+  DEP_FILE = CMakeFiles/idj_engine.dir/src/GameObject.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
+  OBJECT_DIR = CMakeFiles/idj_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
+
+build CMakeFiles/idj_engine.dir/src/components/Component.cpp.o: CXX_COMPILER__idj_engine_unscanned_Debug /home/kitsai/coding/games/idj_engine/src/components/Component.cpp || cmake_object_order_depends_target_idj_engine
+  DEP_FILE = CMakeFiles/idj_engine.dir/src/components/Component.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
+  OBJECT_DIR = CMakeFiles/idj_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir/src/components
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
+
+build CMakeFiles/idj_engine.dir/src/exceptions/ComponentNotFoundException.cpp.o: CXX_COMPILER__idj_engine_unscanned_Debug /home/kitsai/coding/games/idj_engine/src/exceptions/ComponentNotFoundException.cpp || cmake_object_order_depends_target_idj_engine
+  DEP_FILE = CMakeFiles/idj_engine.dir/src/exceptions/ComponentNotFoundException.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
+  OBJECT_DIR = CMakeFiles/idj_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir/src/exceptions
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
+
+build CMakeFiles/idj_engine.dir/src/physics/Collision.cpp.o: CXX_COMPILER__idj_engine_unscanned_Debug /home/kitsai/coding/games/idj_engine/src/physics/Collision.cpp || cmake_object_order_depends_target_idj_engine
+  DEP_FILE = CMakeFiles/idj_engine.dir/src/physics/Collision.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
+  OBJECT_DIR = CMakeFiles/idj_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir/src/physics
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
+
+build CMakeFiles/idj_engine.dir/src/components/BoxCollider.cpp.o: CXX_COMPILER__idj_engine_unscanned_Debug /home/kitsai/coding/games/idj_engine/src/components/BoxCollider.cpp || cmake_object_order_depends_target_idj_engine
+  DEP_FILE = CMakeFiles/idj_engine.dir/src/components/BoxCollider.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
+  OBJECT_DIR = CMakeFiles/idj_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir/src/components
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
+
+build CMakeFiles/idj_engine.dir/src/components/Camera.cpp.o: CXX_COMPILER__idj_engine_unscanned_Debug /home/kitsai/coding/games/idj_engine/src/components/Camera.cpp || cmake_object_order_depends_target_idj_engine
+  DEP_FILE = CMakeFiles/idj_engine.dir/src/components/Camera.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
+  OBJECT_DIR = CMakeFiles/idj_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir/src/components
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
+
+build CMakeFiles/idj_engine.dir/src/Game.cpp.o: CXX_COMPILER__idj_engine_unscanned_Debug /home/kitsai/coding/games/idj_engine/src/Game.cpp || cmake_object_order_depends_target_idj_engine
+  DEP_FILE = CMakeFiles/idj_engine.dir/src/Game.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
+  OBJECT_DIR = CMakeFiles/idj_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
+
+build CMakeFiles/idj_engine.dir/src/time/Time.cpp.o: CXX_COMPILER__idj_engine_unscanned_Debug /home/kitsai/coding/games/idj_engine/src/time/Time.cpp || cmake_object_order_depends_target_idj_engine
+  DEP_FILE = CMakeFiles/idj_engine.dir/src/time/Time.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
+  OBJECT_DIR = CMakeFiles/idj_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir/src/time
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
+
+build CMakeFiles/idj_engine.dir/src/settings/Settings.cpp.o: CXX_COMPILER__idj_engine_unscanned_Debug /home/kitsai/coding/games/idj_engine/src/settings/Settings.cpp || cmake_object_order_depends_target_idj_engine
+  DEP_FILE = CMakeFiles/idj_engine.dir/src/settings/Settings.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
+  OBJECT_DIR = CMakeFiles/idj_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir/src/settings
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
+
+build CMakeFiles/idj_engine.dir/src/exceptions/GameNotStartedException.cpp.o: CXX_COMPILER__idj_engine_unscanned_Debug /home/kitsai/coding/games/idj_engine/src/exceptions/GameNotStartedException.cpp || cmake_object_order_depends_target_idj_engine
+  DEP_FILE = CMakeFiles/idj_engine.dir/src/exceptions/GameNotStartedException.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
+  OBJECT_DIR = CMakeFiles/idj_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir/src/exceptions
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
+
+build CMakeFiles/idj_engine.dir/src/Resources.cpp.o: CXX_COMPILER__idj_engine_unscanned_Debug /home/kitsai/coding/games/idj_engine/src/Resources.cpp || cmake_object_order_depends_target_idj_engine
+  DEP_FILE = CMakeFiles/idj_engine.dir/src/Resources.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
+  OBJECT_DIR = CMakeFiles/idj_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
+
+build CMakeFiles/idj_engine.dir/src/arith/Circle.cpp.o: CXX_COMPILER__idj_engine_unscanned_Debug /home/kitsai/coding/games/idj_engine/src/arith/Circle.cpp || cmake_object_order_depends_target_idj_engine
+  DEP_FILE = CMakeFiles/idj_engine.dir/src/arith/Circle.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
+  OBJECT_DIR = CMakeFiles/idj_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir/src/arith
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
+
+build CMakeFiles/idj_engine.dir/src/components/Collider.cpp.o: CXX_COMPILER__idj_engine_unscanned_Debug /home/kitsai/coding/games/idj_engine/src/components/Collider.cpp || cmake_object_order_depends_target_idj_engine
+  DEP_FILE = CMakeFiles/idj_engine.dir/src/components/Collider.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
+  OBJECT_DIR = CMakeFiles/idj_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir/src/components
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
+
+build CMakeFiles/idj_engine.dir/src/components/CircleCollider.cpp.o: CXX_COMPILER__idj_engine_unscanned_Debug /home/kitsai/coding/games/idj_engine/src/components/CircleCollider.cpp || cmake_object_order_depends_target_idj_engine
+  DEP_FILE = CMakeFiles/idj_engine.dir/src/components/CircleCollider.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/kitsai/coding/games/idj_engine/include -I/home/kitsai/coding/games/idj_engine/src
+  OBJECT_DIR = CMakeFiles/idj_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/idj_engine.dir/src/components
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
+  TARGET_PDB = libidj_engine.pdb
 
 
 # =============================================================================
@@ -92,13 +255,14 @@ build CMakeFiles/idj_engine.dir/src/arith/Rect.cpp.o: CXX_COMPILER__idj_engine_u
 #############################################
 # Link the static library libidj_engine.a
 
-build libidj_engine.a: CXX_STATIC_LIBRARY_LINKER__idj_engine_Debug CMakeFiles/idj_engine.dir/library.cpp.o CMakeFiles/idj_engine.dir/src/arith/Vec2.cpp.o CMakeFiles/idj_engine.dir/src/arith/Vec3.cpp.o CMakeFiles/idj_engine.dir/src/InputManager.cpp.o CMakeFiles/idj_engine.dir/src/arith/Rect.cpp.o
+build libidj_engine.a: CXX_STATIC_LIBRARY_LINKER__idj_engine_Debug CMakeFiles/idj_engine.dir/library.cpp.o CMakeFiles/idj_engine.dir/src/arith/Vec2.cpp.o CMakeFiles/idj_engine.dir/src/arith/Vec3.cpp.o CMakeFiles/idj_engine.dir/src/InputManager.cpp.o CMakeFiles/idj_engine.dir/src/arith/Rect.cpp.o CMakeFiles/idj_engine.dir/src/arith/Vec2Int.cpp.o CMakeFiles/idj_engine.dir/src/arith/Vec3Int.cpp.o CMakeFiles/idj_engine.dir/src/State.cpp.o CMakeFiles/idj_engine.dir/src/GameObject.cpp.o CMakeFiles/idj_engine.dir/src/components/Component.cpp.o CMakeFiles/idj_engine.dir/src/exceptions/ComponentNotFoundException.cpp.o CMakeFiles/idj_engine.dir/src/physics/Collision.cpp.o CMakeFiles/idj_engine.dir/src/components/BoxCollider.cpp.o CMakeFiles/idj_engine.dir/src/components/Camera.cpp.o CMakeFiles/idj_engine.dir/src/Game.cpp.o CMakeFiles/idj_engine.dir/src/time/Time.cpp.o CMakeFiles/idj_engine.dir/src/settings/Settings.cpp.o CMakeFiles/idj_engine.dir/src/exceptions/GameNotStartedException.cpp.o CMakeFiles/idj_engine.dir/src/Resources.cpp.o CMakeFiles/idj_engine.dir/src/arith/Circle.cpp.o CMakeFiles/idj_engine.dir/src/components/Collider.cpp.o CMakeFiles/idj_engine.dir/src/components/CircleCollider.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/idj_engine.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/idj_engine.dir/idj_engine.pdb
   TARGET_FILE = libidj_engine.a
-  TARGET_PDB = idj_engine.a.dbg
+  TARGET_PDB = libidj_engine.pdb
 
 
 #############################################
@@ -145,14 +309,14 @@ build all: phony libidj_engine.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/kitsai/coding/games/idj_engine/CMakeLists.txt /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/kitsai/coding/games/idj_engine/CMakeLists.txt /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeSystem.cmake.in /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/kitsai/coding/games/idj_engine/CMakeLists.txt /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
+build /home/kitsai/coding/games/idj_engine/CMakeLists.txt /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeSystem.cmake.in /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux.cmake /snap/clion/275/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
 
 
 #############################################

@@ -30,6 +30,10 @@ namespace fyrebird {
         return x*v.x + y+v.y;
     }
 
+    real Vec2::operator%(const Vec2 &v) const {
+        return x*v.y - y-v.x;
+    }
+
     void Vec2::operator+=(const Vec2 &v) {
         this->x += v.x;
         this->y += v.y;
@@ -65,6 +69,12 @@ namespace fyrebird {
     }
 
 //SCALER
+    Vec2 &Vec2::operator=(const real &v) {
+        x = v;
+        y = v;
+        return *this;
+    }
+
     Vec2 Vec2::operator+(const real &v) const {
         return {this->x + v, this->y + v};
     }
@@ -126,13 +136,13 @@ namespace fyrebird {
     }
 
     real Vec2::mag() const {
-        real ret = real_sqrt(this->magSq());
-        return ret;
+        return real_sqrt(this->magSq())
     }
 
     Vec2 Vec2::normalize() const {
         const real m = this->mag();
-        return {this->x * (1.f / m), this->y * (1.f / m)};
+        Vec2 ret = (m != 0)? Vec2(this->x * (1.f / m), this->y * (1.f / m)) : Vec2::zero();
+        return ret;
     }
 
     real Vec2::dist_vec2(const Vec2 &other) const {
@@ -157,17 +167,21 @@ namespace fyrebird {
         return {std::abs(this->x), std::abs(this->y)};
     }
 
+    Vec2 Vec2::inverse() const {
+        return {-x,-y,};
+    }
+
+    Vec2 Vec2::component_product(const Vec2 &v) const {
+        return {x*v.x,y*v.y};
+    }
+
+
     real Vec2::dot(const Vec2 &v) const {
         return (this->x * v.x) + (this->y * v.y);
     }
 
-    Vec2 Vec2::cross(const Vec2 &v) const {
-        const real mag_a = mag();
-        const real mag_b = v.mag();
-        const real angle = incl_vec2(v);
-        const real a_sin = std::sin(angle);
-        const Vec2 n = Vec2::up();
-        return n * mag_a * mag_b * a_sin;
+    real Vec2::cross(const Vec2 &v) const {
+        return this->x*v.y - this->y*v.x;
     }
 
 //INITIALIZERS

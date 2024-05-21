@@ -7,6 +7,7 @@
 #include "arith/Vec2.h"
 #include "arith/Vec2Int.h"
 #include <cmath>
+
 namespace fyrebird {
     Vec3::Vec3(real x, real y, real z) {
         this->x = x;
@@ -14,7 +15,7 @@ namespace fyrebird {
         this->z = z;
     }
 
-//VEC3
+    //VEC3
     Vec3 &Vec3::operator=(const Vec3 &v) = default;
 
     Vec3 Vec3::operator+(const Vec3 &v) const {
@@ -25,8 +26,16 @@ namespace fyrebird {
         return {this->x - v.x, this->y - v.y, this->z - v.z};
     }
 
-    Vec3 Vec3::operator*(const Vec3 &v) const {
-        return {this->x * v.x, this->y * v.y, this->z * v.z};
+    real Vec3::operator*(const Vec3 &v) const {
+        return this->x * v.x + this->y * v.y + this->z * v.z;
+    }
+
+    Vec3 Vec3::operator%(const Vec3 &v) const {
+        return {
+            y*v.z-z*v.y,
+            z*v.x-x*v.z,
+            x*v.y-y*v.x
+        };
     }
 
     void Vec3::operator+=(const Vec3 &v) {
@@ -41,11 +50,10 @@ namespace fyrebird {
         this->z -= v.z;
     }
 
-    void Vec3::operator*=(const Vec3 &v) {
-        this->x *= v.x;
-        this->y *= v.y;
-        this->z *= v.z;
+    void Vec3::operator%=(const Vec3 &v) {
+        *this = cross(v);
     }
+
 
     bool Vec3::operator==(const Vec3 &v) const {
         return this->x == v.x && this->y == v.y && this->z == v.z;
@@ -71,7 +79,14 @@ namespace fyrebird {
         return this->x <= v.x && this->y <= v.y && this->z <= v.z;
     }
 
-//SCALER
+    //SCALER
+    Vec3 &Vec3::operator=(const real &v) {
+        x = v;
+        y = v;
+        z = v;
+        return *this;
+    }
+
     Vec3 Vec3::operator+(const real &v) const {
         return {this->x + v, this->y + v, this->z + v};
     }
@@ -81,10 +96,10 @@ namespace fyrebird {
     }
 
     Vec3 Vec3::operator*(const real &v) const {
-        return {this->x * v, this->y * v, this->z * v};
+        return {x * v, y * v, z * v};
     }
 
-//VEC2
+    //VEC2
     Vec3 &Vec3::operator=(const Vec2 &v) {
         this->x = v.x;
         this->y = v.y;
@@ -99,8 +114,8 @@ namespace fyrebird {
         return {x - v.x, y - v.y, 0};
     }
 
-    Vec3 Vec3::operator*(const Vec2 &v) const {
-        return {x * v.x, y * v.y, 0};
+    real Vec3::operator*(const Vec2 &v) const {
+        return x * v.x + y * v.y;
     }
 
     void Vec3::operator+=(const Vec2 &v) {
@@ -113,12 +128,8 @@ namespace fyrebird {
         this->y -= v.y;
     }
 
-    void Vec3::operator*=(const Vec2 &v) {
-        this->x *= v.x;
-        this->y *= v.y;
-    }
 
-//CONVERSIONS
+    //CONVERSIONS
     Vec3::operator Vec2() const {
         return {this->x, this->y};
     }
@@ -131,7 +142,7 @@ namespace fyrebird {
         return {static_cast<int>(this->x), static_cast<int>(this->y), static_cast<int>(this->z)};
     }
 
-//OPERATIONS
+    //OPERATIONS
     real Vec3::magSq() const {
         return this->x * this->x + this->y * this->y + this->z * this->z;
     }
@@ -147,9 +158,9 @@ namespace fyrebird {
 
     real Vec3::dist_vec3(const Vec3 &other) const {
         return real_sqrt(
-                (this->x - other.x) * (this->x - other.x) + (this->y - other.y) * (this->y - other.y) +
-                (this->z - other.z)
-                * (this->z - other.z));
+            (this->x - other.x) * (this->x - other.x) + (this->y - other.y) * (this->y - other.y) +
+            (this->z - other.z)
+            * (this->z - other.z));
     }
 
     real Vec3::incl() const {
@@ -170,12 +181,29 @@ namespace fyrebird {
         return {std::abs(this->x), std::abs(this->y), std::abs(this->z)};
     }
 
-    real Vec3::dot(const Vec3 &v) const {
-        const Vec3 product = *this * v;
-        return product.x + product.y + product.z;
+
+    Vec3 Vec3::inverse() const {
+        return {-x, -y, -z};
     }
 
-//INITIALIZERS
+    Vec3 Vec3::component_producr(const Vec3 &v) const {
+        return {x * v.x, y * v.y, z * v.z};
+    }
+
+    real Vec3::dot(const Vec3 &v) const {
+        return *this * v;
+    }
+
+    Vec3 Vec3::cross(const Vec3 &v) const {
+        return {
+            this->y*v.z - this->z*v.y,
+            this->z*v.x - this->x*v.z,
+            this->x*v.y - this->y*v.x
+        };
+    }
+
+
+    //INITIALIZERS
     Vec3 Vec3::zero() {
         return {0, 0, 0};
     }
